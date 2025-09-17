@@ -96,3 +96,20 @@ try {
 } finally {
     console.log("finally block");
 }
+
+// ===================================================================================
+// TODO-7: REGEX + forEach — find words containing 'ab' and log matches from the list
+// ===================================================================================
+console.log("TODO7");
+const words = ["ban", "babble", "make", "flab"];
+const re = /ab/;
+const matches = [];
+
+words.forEach((w) => {
+    if (re.test(w)) {
+        console.log(`${w} matches!`);
+        matches.push(w);
+    }
+});
+
+console.log("words that matched:", matches);
