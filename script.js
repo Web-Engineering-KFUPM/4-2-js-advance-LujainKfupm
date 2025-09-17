@@ -47,3 +47,20 @@ const courses = { COE301: "Computer Organization", ICS104: "Introduction to Prog
 for (const code in courses) {
     console.log(`${code} → ${courses[code]}`);
 }
+
+// =========================================
+// TODO-3: STRING OBJECT — charAt() & length
+// =========================================
+console.log("TODO3");
+const phrase = "JavaScript";
+console.log(`string: "${phrase}"`);
+console.log("length:", phrase.length);
+console.log("first char:", phrase.charAt(0));
+
+
+// ===================================
+// TODO-4: DATE — day, month, and year
+// ===================================
+console.log("TODO4");
+const date = new Date();
+console.log(`day: ${date.getDate()}, month: ${date.getMonth()}, year: ${date.getFullYear()}`);
