@@ -74,3 +74,25 @@ const min = Math.min(...nums);
 const max = Math.max(...nums);
 console.log("numbers:", nums);
 console.log("min:", min, "max:", max);
+
+
+// ===================================================================
+// TODO-6: EXCEPTIONS — try/catch/finally with EMPTY ARRAY edge case
+// ===================================================================
+console.log("TODO6");
+function maxFunc(arr) {
+    if (!Array.isArray(arr) || arr.length === 0){
+        throw new Error("Array must be not empty");
+    }
+    return Math.max(...arr);
+}
+
+try {
+    console.log("max of nums:", maxFunc(nums));
+    console.log("empty array:");
+    console.log(maxFunc([]));
+} catch (e) {
+    console.log("error:", e.message);
+} finally {
+    console.log("finally block");
+}
