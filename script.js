@@ -39,3 +39,11 @@ Student.updateGpa(3.85);
 console.log("GPA after:", Student.gpa);
 
 
+// ====================================
+// TODO-2: OBJECT AS MAP + for...in LOOP
+// ====================================
+console.log("TODO2");
+const courses = { COE301: "Computer Organization", ICS104: "Introduction to Programming", SWE206: "Software Engineering", MATH201: "Calculus 3" };
+for (const code in courses) {
+    console.log(`${code} → ${courses[code]}`);
+}
